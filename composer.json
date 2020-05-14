@@ -1,0 +1,27 @@
+{
+    "name": "qcth/laravel7-aliyun-sms",
+    "version": "0.1",
+    "description": "this is aliyun sms demo",
+    "authors": [
+        {
+            "name": "qcth",
+            "email": "qcth@foxmail.com"
+        }
+    ],
+    "require": {},
+	"autoload":{
+        "psr-4":{
+            "Qcth\\AliyunSms\\":"src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Qcth\\AliyunSms\\Provider\\AliyunSmsServiceProvider"
+            ],
+            "aliases": {
+                "AliyunSms": "Qcth\\AliyunSms\\Facade\\AliyunSms"
+            }
+        }
+    }
+}
